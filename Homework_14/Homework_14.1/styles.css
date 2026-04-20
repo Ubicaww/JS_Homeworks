@@ -1,0 +1,89 @@
+.slider {
+  width: 500px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev::before {
+  transform: rotate(-135deg);
+}
+
+.next {
+  right: 10px;
+}
+
+.next::before {
+  transform: rotate(45deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: black;
+}
