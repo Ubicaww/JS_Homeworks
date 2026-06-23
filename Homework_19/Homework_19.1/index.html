@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div class="weather-container">
+    <div class="weather-card">
+      <div id="current-date">-- --, ---- - --</div>
+      <div id="current-time">--:-- --</div>
+      
+      <h2 id="city">Завантаження...</h2>
+      
+      <div class="temp-box">
+        <img id="weather-icon" alt="Іконка">
+        <span id="temp">--°C</span>
+      </div>
+      
+      <p id="description">Очікування даних...</p>
+      
+      <div class="details">
+        <div>Вологість: <span id="humidity">--</span>%</div>
+        <div>Вітер: <span id="wind">--</span> м/с</div>
+      </div>
+
+      <button id="refresh-btn">Оновити дані</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
