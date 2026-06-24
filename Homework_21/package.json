@@ -1,0 +1,21 @@
+{
+  "name": "homework_21",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8",
+    "jquery": "4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^8.0.1",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2"
+  }
+}
